@@ -1,0 +1,20 @@
+/*Styles by Reece going to give a background color */
+body{
+  background-color: red;
+}
+
+.menu{
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  /*text-align: center;*/
+}
+
+.face {
+    background-color: black;
+}
+
+.para {
+  color: white;
+}

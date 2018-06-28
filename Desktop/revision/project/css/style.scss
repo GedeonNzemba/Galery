@@ -1,0 +1,62 @@
+
+
+/*# sourceMappingURL=style.scss.map */
+$secondaryColor : #A50104;
+$primaryFontSize : 20px;
+$primaryBackgroundColor : #FCBA04;
+$primaryPadding : 50px;
+$secondFontSize: 25px;
+$thirdColor: #590004;
+
+
+/*apply all variables at the top, cause it applies to everything bellow it*/
+
+// p{
+//   color: $secondaryColor;
+//   font-size: $primaryFontSize;
+//   background-color: $primaryBackgroundColor;
+//   padding: $primaryPadding;
+// }
+//
+// /*styling my headings using syntax*/
+//
+// h1{
+//   color: $secondaryColor;
+//   font-size: $primaryFontSize;
+//   padding: $primaryPadding;
+// }
+
+/*adding some mixins*/
+
+@mixin redBorder{
+  border: 5px solid red;
+  border-radius: 6px;
+}
+
+h1{
+  @include redBorder
+}
+
+p{
+  @include redBorder
+}
+
+/*this is an example of nesting*/
+
+.wrapper {
+   p{
+     color: $secondaryColor;
+     font-size: $primaryFontSize;
+     padding: $primaryPadding;
+     background-color: $primaryBackgroundColor;
+   }
+   h1{
+     color: $thirdColor;
+     font-size: $secondFontSize;
+     padding: $primaryPadding;
+     background-color: $primaryBackgroundColor;
+   }
+   text-align: center;
+   width: 100%;
+
+}

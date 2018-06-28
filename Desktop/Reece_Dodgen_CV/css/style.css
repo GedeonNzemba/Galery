@@ -1,0 +1,92 @@
+/*my grid-layout*/
+#container{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+/*adding a font-style and font-size to my body*/
+body{
+  font-style: oblique;
+  font-size: 24px;
+}
+/*adding some css to my heading1*/
+h1{
+  text-align: center;
+  font-style: oblique;
+  font-size: 40px;
+  color: goldenrod;
+  text-decoration: underline;
+}
+ /*styling the nav bar*/
+ .nav{
+   text-align: center;
+   font-size: 20px;
+ }
+
+/*adding some style to my table*/
+table, td{
+  padding: 5px;
+  border: 1px;
+  display: inline;
+  text-align: left;
+  width: 100%;
+}
+/*adding style to my grid*/
+.item1{
+  background-color: #DBFE87;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.item2{
+  background-color: #DBFE87;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.item3{
+  background-color: #DBFE87;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+/*styling my h2*/
+h2{
+  color: maroon;
+  text-decoration: underline;
+}
+/*adding a fieldset*/
+fieldset{
+  border: #0CF574 2px solid;
+  background-color: #15E6CD;
+  align-content: center;
+}
+/*styling my paragraphs*/
+p{
+  font-style: italic;
+  font-size: 25px;
+  color: black;
+}
+/*styling a seperate paragraph in heading2*/
+.para1{
+  color: black;
+}
+/*adding some style to a seperate h2 tag*/
+.heading2{
+  color: maroon;
+}
+/*styling a seperate fieldset*/
+.fed{
+  background-color: maroon;
+}
+/*styling my footer*/
+footer{
+  text-align: center;
+}
+/*adding a class to my footer*/
+.foot{
+  background-color: #7A306C;
+}

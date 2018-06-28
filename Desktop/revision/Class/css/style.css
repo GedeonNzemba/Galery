@@ -1,0 +1,27 @@
+  .rectangle{
+    background-color: red;
+    width: 300px;
+    height: 230px;
+    border-style: dotted;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .sqaure{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border-style: dashed;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .circle{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    float: left;
+    margin-left: 10%;
+  }

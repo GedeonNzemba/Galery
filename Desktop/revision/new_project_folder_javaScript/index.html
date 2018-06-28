@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- external javascript file -->
+    <script src="js/main.js"></script>
+
+<!-- javascript can be placed in the head tag of your html file -->
+    <script></script>
+
+  </head>
+  <body>
+
+    <!-- <p id="ptag">This is my starter text.</p>
+    <button onclick="alert('Hi')">Say Hi</button> -->
+
+    <style media="screen">
+      div{
+        padding: 50px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <div id="div1" class="box"></div>
+    <div id="div2" class="box"></div>
+    <div id="div3" class="box"></div>
+
+    <button id="button">Reece</button>
+<!-- javaScript can also be placed before the closing body tag -->
+   <script>
+// tis is an example of a function.
+   // console.log('THERES DEAD PEOPLE EVERYWHERE');
+   // alert('GOODBYE');
+   // confirm('Its okay');
+   // prompt("Please enter your name", "Harry Potter");
+
+//    // variable.
+//    var x = 5; /*integer*/ /*are numbers*/ /*integers do not have quotes areound them*/
+//    var y = 6;
+//    var z = x + y;
+//   console.log(z);
+//
+//   // example 2.
+//   var me = "Reece";
+//   var question = "Are you "; /*string*/ /*are texts*/
+//   var ask = question + me;
+//   console.log(ask);
+//
+//   var newVar; //declaring a new variable.
+//   console.log(newVar); //undefined.
+//
+// // this is an exapmle of booleam.
+//   var thisIsABoolean = true;
+//   var thisIsABoolean = false;
+//   console.log(thisIsABoolean); //false - booleam example
+//
+//   var thisIsNothing = null; //not equal to undefined, value is "empty"
+//
+//   var array = ['hiking', 'camping', 'climbing', 'swimming', 5, 6]; //list of things. //contains more than one value, zero indexed.
+//
+//   var object ={
+//     name: "Reece",
+//     age: 2,
+//     location: "Brazil",
+//   };
+//   console.log(object);
+//
+//   var Car ={
+//     make: "Toyota RunX", //property value pair/ key-value pairs
+//     year: 2003,
+//     colour: "red",
+//   };
+//   console.log(Car);
+//
+//   // javaScript date object.
+//   var date = new Date();
+//   console.log(date);
+//
+//   // arrays
+//   // two ways to declare a new array
+//   var hobbies = [];
+//   var hobbies = new Array();
+//
+//   var favourite_hobby = "soccer"
+//
+//   console.log(hobbies);
+//
+//   // add new item to my array using the push method
+//   // hobbies.push(favourite_hobby);
+//   hobbies[0] = favourite_hobby; //assign value to index
+//
+//   console.log(hobbies); -->
+
+  // THIS IS AN EXAMPLE OF HOISTING
+  // console.log(j);
+  // console.log(x);
+  // var x =0;
+
+// LET AND CONST DOES NOT GET HOISTED
+  // x;
+  // console.log(x)
+  // var x =0;
+
+  // console.log(a);
+  // var a =2;
+  // // console.log(b);
+  // // console.log(c);
+  // let c =2;
+  // console.log(c);
+
+// EXAMPLE OF FUNCTIONS
+  // VAR IS FUNCTION SCOPED
+  // function foo(){
+  //   var i=5; LOCAL VARIABLE!
+  // }
+  // console.log(i);
+  // undefined
+
+  // VAR IS NOT BLOCK SCOPED
+  // var x=5;
+  // function foo(){
+  //   var x=6; GLOBAL VARIABLE!
+  // }
+  // foo();
+  // console.log(x);
+  // // 6
+
+  // var x=5;
+  // if (true) {
+  //   var x=6;
+  // }
+  // console.log(x);
+  //
+
+  // TARGETS ELLEMENT WITH ID
+  // var ptag = document.getElementById('ptag');
+  // // CHANGE CONTENT INSIDE HTML ELEMENT
+  // ptag.innerHTML = "New Text";
+  //
+  // document.getElementById('ptag').innerHTML = "Second Text";
+  //
+  // // UPDATE STYLING
+  // ptag.style.backgroundColor= "blue";
+  // document.getElementById('ptag').style.backgroundColor="red";
+
+
+  // console.log(ptag);
+
+  var button = document.getElementById('button');
+  button.onclick = function(){
+      // DIV ONE
+      var div1=document.getElementById('div1');
+      document.getElementById('div1').innerHTML="My first jS example.";
+      div1.style.backgroundColor="blue";
+      // DIV TWO
+      var div2=document.getElementById('div2');
+      document.getElementById('div2').innerHTML="Second jS example.";
+      div2.style.backgroundColor="green";
+      // DIV THREE
+      var div3=document.getElementById('div3');
+      document.getElementById('div3').innerHTML="Third jS example.";
+      div3.style.backgroundColor="red";
+      //EXAMPLE OF javaScript EVENTS.
+      div3.onmouseover = function(){
+        div3.style.backgroundColor = "purple"
+      };
+      div3.onmouseleave = function(){
+        div3.style.backgroundColor = "red"
+      };
+  };
+
+  var divs = document.getElementsByClassName('box');
+  // console.log(divs);
+  divs[1].style.backgroundColor = "yellow";
+  divs[2].style.backgroundColor = "yellow";
+  divs[0].style.backgroundColor = "yellow";
+
+  // DEBUGGING & TESTING
+  document.write(divs.length);
+
+
+
+
+
+
+
+
+
+   </script>
+   <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+/*# sourceMappingURL=style.scss.map */
+/*apply all variables at the top, cause it applies to everything bellow it*/
+/*adding some mixins*/
+h1 {
+  border: 5px solid red;
+  border-radius: 6px; }
+
+p {
+  border: 5px solid red;
+  border-radius: 6px; }
+
+/*this is an example of nesting*/
+.wrapper {
+  text-align: center;
+  width: 100%; }
+  .wrapper p {
+    color: #A50104;
+    font-size: 20px;
+    padding: 50px;
+    background-color: #FCBA04; }
+  .wrapper h1 {
+    color: #590004;
+    font-size: 25px;
+    padding: 50px;
+    background-color: #FCBA04; }
+
+/*# sourceMappingURL=style.css.map */
